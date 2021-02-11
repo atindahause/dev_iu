@@ -32,7 +32,7 @@ public class EventoController {
 		LocalDate ini = LocalDate.parse(json.get("dt1").asText(), fmt);
 		LocalDate fim = LocalDate.parse(json.get("dt2").asText(), fmt);
 
-        List<Evento> eventos = null;
+        List<Evento> eventos = repo.findByDataevtBetween(ini, fim);
         
         return ResponseEntity.ok(eventos);
     }

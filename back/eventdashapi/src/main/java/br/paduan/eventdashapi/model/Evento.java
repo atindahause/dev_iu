@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -23,13 +24,14 @@ public class Evento {
     @Column(name = "data_evt")
     private LocalDate dataevt;
 
-/*     @OneToOne
-    @JoinColumn(name = "id_alarme")  // JoinColumm = nome da coluna na tabela do BD
+    @OneToOne
+     
+    @JoinColumn(name = "id_alarme") // JoinColumm = nome da coluna na tabela do
     private Alarme alarme;
-
-    @OneToOne 
+    
+    @OneToOne
     @JoinColumn(name = "id_equip")
-    private Equipamento equipamento; */
+    private Equipamento equipamento;
 
     public int getId() {
         return id;
@@ -47,7 +49,15 @@ public class Evento {
         this.dataevt = data_evt;
     }
 
-/*     public Alarme getAlarme() {
+    public Equipamento getEquipamento() {
+        return equipamento;
+    }
+
+    public void setEquipamento(Equipamento equipamento) {
+        this.equipamento = equipamento;
+    }
+
+    public Alarme getAlarme() {
         return alarme;
     }
 
@@ -55,12 +65,20 @@ public class Evento {
         this.alarme = alarme;
     }
 
-    public Equipamento getEquipamento() {
-        return equipamento;
-    }
-
-    public void setEquipamento(Equipamento equipamento) {
-        this.equipamento = equipamento;
-    } */
+    /*
+     * public Alarme getAlarme() { return alarme; }
+     * 
+     * public void setAlarme(Alarme alarme) { this.alarme = alarme; }
+     * 
+     * public Equipamento getEquipamento() { return equipamento; }
+     * 
+     * public void setEquipamento(Equipamento equipamento) { this.equipamento =
+     * equipamento; }
+     * 
+     * public Equipamento getIpaddr() { return ipaddr; }
+     * 
+     * public void setEquipamento(Equipamento ipaddr) { this.ipaddr = ipaddr; }
+     * 
+     */
 
 }
