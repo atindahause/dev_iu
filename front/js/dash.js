@@ -13,7 +13,7 @@ function logout() {
 }
 
 function voltar(){
-
+    window.location = "dashmenu.html";
 }
 
 function obterDatas(){

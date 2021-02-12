@@ -25,3 +25,12 @@ img{
     border-style: solid;
     border-width: 1px;
 }
+
+#logo{
+    height: 50px;
+    width: 70px;
+}
+
+.d-inline-block{
+    padding-right: 1em;
+}
