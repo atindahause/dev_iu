@@ -18,38 +18,34 @@
 </head>
 
 <body onload="validaLogin()">
+    <div>
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="dashmenu.html">
+                <img id="logo" src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png"
+                    width="30" height="30" class="d-inline-block" alt="" loading="lazy">Equipe: /dev/IU
+            </a>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-primary" onclick="voltar()">Voltar</button>
+                <button class="btn btn-primary" onclick="logout()">Logout</button>
+                </form>
+        </nav>
+    </div>
     <div class="container h-100">
-        <div class="row justify-content-between">
-            <div id="foto" class="col-8">
-                <div class="media">
-                    <div id="imgUser"></div>
-                    <div class="media-body">
-                        <h5 class="mt-0">
-                            <br>
-                            <p id="user"></p>
-                        </h5>
+        <div class="row justify-content-center">
+            <div class="row h-50 justify-content-center">
+                <div class="col-8 h-50 my-auto"> <!-- id="menu"> -->
+                    <div class="row h-100">
+                        <div id="btn" class="col-4 text-left">
+                            <button class="btn btn-primary" onclick="gerarRelatorioAlarmes()">Executar</button>
+                        </div>
+                        <div id="tabela">
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="btn" class="col-4 text-right">
-                <button class="btn btn-secondary" onclick="logout()">Logout</button>
-                <div id="btn" class="col-4 text-right">
-                    <button class="btn btn-secondary" onclick="voltar()">Voltar</button>
-            </div>
-        </div>
-
-        <div class="row h-50 justify-content-center">
-            <div class="col-8 h-50 my-auto" id="menu">
-                <div class="row h-100">
-                    <div id="btn" class="col-4 text-left">
-                        <button class="btn btn-secondary" onclick="gerarRelatorioAlarmes()">Executar</button>
-                    </div>
-                    <div id="tabela">
-
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
     </div>
 </body>
 

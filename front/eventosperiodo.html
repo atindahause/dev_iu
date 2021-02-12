@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/css/estilo.css">
 
     <script src="/js/dash.js"></script>
+    
+
 
     <title>eventosPeriodo</title>
 
@@ -18,6 +20,19 @@
 </head>
 
 <body onload="validaLogin()">
+    <div>
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="dashmenu.html">
+                <img id="logo" src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png"
+                    width="30" height="30" class="d-inline-block" alt="" loading="lazy">Equipe: /dev/IU
+            </a>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-primary" onclick="voltar()">Voltar</button>
+                <button class="btn btn-primary" onclick="logout()">Logout</button>
+              </form>
+        </nav>
+    </div>
     <div class="container h-100">
         <div class="row justify-content-between">
             <div id="foto" class="col-8">
@@ -31,31 +46,35 @@
                     </div>
                 </div>
             </div>
-            <div id="btn" class="col-4 text-right">
-                <button class="btn btn-secondary" onclick="logout()">Logout</button>
-                <div id="btn" class="col-4 text-right">
-                    <button class="btn btn-secondary" onclick="voltar()">Voltar</button>
-                </div>
-            </div>
+
         </div>
         <div class="row">
-            <form>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Data inicial</label>
-                    <input type="date" class="form-control" id="dtinicio">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2">Data final</label>
-                    <input type="date" class="form-control" id="dtfinal">
+            <p>Insira o periodo desejado para levantar os eventos ocorridos:</p><br>
+        </div>
+        <div class="row" id="divCentralizado">
+
+            <form id="divCentralizado">
+                <div class="row">
+                    <div class="col">
+                        <label for="formGroupExampleInput">Data inicial</label>
+                        <input type="date" class="form-control" id="dtinicio">
+                    </div>
+                    <div class="col">
+                        <label for="formGroupExampleInput2">Data final</label>
+                        <input type="date" class="form-control" id="dtfinal">
+                    </div>
                 </div>
             </form>
+
         </div>
         <div id="btn" class="col-4 text-left">
-            <button class="btn btn-secondary" onclick="gerarRelatorioEventos()">Executar</button>
+            <button class="btn btn-primary" onclick="gerarRelatorioEventos()">Executar</button>
+            <br>
+            <br>
         </div>
-<div id="tabela">
-    
-</div>
+        <div id="tabela">
+
+        </div>
     </div>
 </body>
 

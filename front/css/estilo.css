@@ -34,3 +34,27 @@ img{
 .d-inline-block{
     padding-right: 1em;
 }
+
+.mr-4{
+    height: 60px;
+    width: 60px;
+}
+
+.btn-primary{
+    margin-right: 100px;
+}
+#divCentralizado{
+    align-content: center;
+}
+
+/* body{
+    background-color:rgb(146, 171, 216);
+} */
+
+.btn-secondary{
+    margin-right: 100px;
+}
+
+h6{
+    color: blue;
+}

@@ -18,6 +18,20 @@
 </head>
 
 <body onload="validaLogin()">
+    <div>
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="">
+                <img id="logo" src="https://www.itau.com.br/content/dam/itau/varejo/logo-itau-varejo-desktop.png"
+                    width="30" height="30" class="d-inline-block" alt="" loading="lazy">Equipe: /dev/IU
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <button class="btn btn-primary" onclick="logout()">Logout</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <div class="container h-100">
         <div class="row justify-content-between">
             <div id="foto" class="col-8">
@@ -31,11 +45,8 @@
                     </div>
                 </div>
             </div>
-            <div id="btn" class="col-4 text-right">
-                <button class="btn btn-secondary" onclick="logout()">Logout</button>
-            </div>
         </div>
-        <div class="row h-50 justify-content-center" >
+        <!--         <div class="row h-50 justify-content-center" >
             <div class="col-8 h-50 my-auto" id="menu">
                 <div class="row h-100">
                     <div class="col my-auto text-center">
@@ -44,7 +55,31 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div class="media"><a href="listaalarmes.html">
+                <img src="./imgs/events_all.png" class="mr-4" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Listar alarmes</h5>
+                    Listar a relação de todos os alarmes que são monitorados pelo sistema EventDash</a>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="media"><a href="eventosperiodo.html">
+                <img src="./imgs/events_date.png" class="mr-3" alt="...">
+                <div class="media-body">
+                    <h5 class="mt-0">Listar eventos por período</h5>
+                    Listar os eventos monitorados por período, selecionado pelo usuário</a>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 </body>
 
